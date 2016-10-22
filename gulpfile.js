@@ -4,23 +4,23 @@ var gulp = require('gulp'),
 
 gulp.task('connect', function() {
     connect.server({
-        root: './',
+        root: './app',
         livereload: true
     });
-    gulp.src('./').pipe(open({
+    gulp.src('./app').pipe(open({
         uri: 'http://localhost:8080/index.html',
         app: 'chrome'
     }));
-    gulp.watch(['./*.html'], ['html'], ['./*.css'], ['css']);
+    gulp.watch(['./app/*.html'], ['html'], ['./*.css'], ['css']);
 });
 
 gulp.task('html', function () {
-    gulp.src('./*.html')
+    gulp.src('./app/*.html')
         .pipe(connect.reload());
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['./*.html'], ['html'], ['./*.css'], ['css']);
+    gulp.watch(['./app/*.html'], ['html'], ['./*.css'], ['css']);
 });
 
 gulp.task('default', ['connect', 'watch']);
