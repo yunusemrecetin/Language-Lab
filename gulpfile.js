@@ -4,11 +4,11 @@ var gulp = require('gulp'),
 
 gulp.task('connect', function() {
     connect.server({
-        root: './app',
+        root: './',
         livereload: true
     });
-    gulp.src('./app').pipe(open({
-        uri: 'http://localhost:8080/index.html',
+    gulp.src('./').pipe(open({
+        uri: 'http://localhost:8080/app/index.html',
         app: 'chrome'
     }));
     gulp.watch(['./app/*.html'], ['html'], ['./*.css'], ['css']);
