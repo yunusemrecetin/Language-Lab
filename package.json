@@ -1,0 +1,19 @@
+{
+  "name": "language_lab",
+  "version": "1.0.0",
+  "description": "android and ios strings translator",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunusemrecetin/Language-Lab.git"
+  },
+  "author": "Yunus Emre CETIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yunusemrecetin/Language-Lab/issues"
+  },
+  "homepage": "https://github.com/yunusemrecetin/Language-Lab#readme"
+}
