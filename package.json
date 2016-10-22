@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/yunusemrecetin/Language-Lab#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "angular": "^1.5.8",
+    "material-design-lite": "^1.2.1"
   },
   "devDependencies": {
     "gulp-connect": "^5.0.0",

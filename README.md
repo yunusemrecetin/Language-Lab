@@ -14,3 +14,13 @@ $ npm install
 ```sh
 $ gulp connect
 ```
+
+### Plugins
+
+Dillinger is currently extended with the following plugins
+
+* Angular JS
+* Material Design Lite
+* Gulp
+* Gulp Connect
+* Gulp Open
