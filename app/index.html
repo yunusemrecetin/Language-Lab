@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="languageLab">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Language Labs</title>
+    <title ng-controller="GlobalController">{{ config.APP_NAME }}</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -26,11 +26,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.teal-green.min.css" />
+
+    <!-- javascript -->
+    <script src="/bower_components/material-design-lite/material.min.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-translate/angular-translate.js"></script>
+    <script src="app.js"></script>
+    <script src="translate.js"></script>
+
   </head>
-<body>
-
-
-<!-- javascript -->
-<script src="/node_modules/material-design-lite/material.min.js"></script>
-</body>
+  <body>
+    <ng-view></ng-view>
+  </body>
 </html>
