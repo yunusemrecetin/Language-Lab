@@ -1,5 +1,9 @@
 # Welcome to Language Lab Project
 
+### **WARNING**
+
+Angular JS components move to Bower. Run the codes in this [link ](#installation)
+
 ### Version
 1.0.0
 
@@ -7,6 +11,10 @@
 
 ```sh
 $ npm install
+
+$ bower install
+---------------
+
 ```
 
 ### Run on Local Server
