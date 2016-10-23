@@ -1,9 +1,8 @@
-var languageLab = angular.module('languageLab', ['ngRoute', 'ui.router']);
-
+var languageLab = angular.module('languageLab', ['ngRoute', 'ui.router', 'pascalprecht.translate']);
 
 languageLab.constant('Config', {
     'APP_NAME' : 'Language Lab'
-})
+});
 
 languageLab.config(function($urlRouterProvider, $routeProvider) {
 
