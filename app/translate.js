@@ -6,9 +6,9 @@ languageLab.config(['$translateProvider', function ($translateProvider) {
   });
  
   $translateProvider.translations('de', {
-    'TAB_1': 'TAB 1',
-    'TAB_2': 'TAB 2',
-    'MENU' : 'MENU'
+    'TAB_1': 'Quelle Ordner',
+    'TAB_2': 'Text zur Quelle',
+    'MENU' : 'MENÜ'
   });
  
  $translateProvider.translations('tr', {
@@ -20,3 +20,4 @@ languageLab.config(['$translateProvider', function ($translateProvider) {
   $translateProvider.preferredLanguage('en');
 
 }]);
+
