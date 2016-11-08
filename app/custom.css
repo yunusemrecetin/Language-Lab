@@ -1,0 +1,129 @@
+body {
+      font-family: 'Proza Libre', sans-serif;
+      letter-spacing: 0.2em;
+      /* Location of the image */
+      background-image: url("img/background-photo.jpg");
+      /* Image is centered vertically and horizontally at all times */
+      background-position: center center;
+      
+      /* Image doesn't repeat */
+      background-repeat: no-repeat;
+      
+      /* Makes the image fixed in the viewport so that it doesn't move when 
+        the content height is greater than the image height */
+      background-attachment: fixed;
+      
+      /* This is what makes the background image rescale based on its container's size */
+      background-size: cover;
+      
+      /* Pick a solid background color that will be displayed while the background image is loading */
+      background-color:#464646;
+      
+      /* SHORTHAND CSS NOTATION
+      * background: url(background-photo.jpg) center center cover no-repeat fixed;
+      */
+      /* For mobile devices */
+  @media only screen and (max-width: 767px) {
+    body {
+      /* The file size of this background image is 93% smaller
+      * to improve page load speed on mobile internet connections */
+      background-image: url(images/background-photo-mobile-devices.jpg);
+    }
+	}  
+}
+
+.file_input_div {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  left: 25%;
+  top: 50%; 
+  margin-top: -150px !important;
+  margin-right: -150px !important;
+}
+
+.file_input {
+  float: left;
+}
+
+#file_input_text_div {
+  width: 200px;
+  margin-top: -8px;
+  margin-left: 5px;
+}
+
+.none {
+  display: none;
+}
+
+/* File Upload */
+.file_input_div{
+    margin: 0 auto;
+    margin-top: 70px;
+    display: inline-block;
+    zoom: 1;
+    display*: inline;
+}
+
+.content-language {
+  height: 500px;
+  width: 1024px;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(48%, rgba(246,246,246,1)), color-stop(51%, rgba(245,245,245,1)), color-stop(93%, rgba(237,237,237,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+.mdl-cell--4-col{
+  /*background: yellow;*/
+}
+
+
+.TranslateTo {
+  font-weight: 700;
+  font-size: 17px;
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  margin-top: 100px;
+}
+
+/* Languages -Source File- */
+#languages {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  
+
+}
+.checkboxes {
+  margin-top: 20px;
+}
+
+.left {
+  float: left;
+  position: absolute;
+  left: 25%;
+  top: 50%; 
+}
+.right{
+  float: right;
+  margin-right: 20px;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  margin-left: 175px; 
+}
+
+/* # Languages -Source File- */
+
+
+
