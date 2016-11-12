@@ -18,7 +18,8 @@
   "homepage": "https://github.com/yunusemrecetin/Language-Lab#readme",
   "dependencies": {
     "bower": "^1.7.9",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "xlsx": "^0.8.0"
   },
   "devDependencies": {
     "gulp-connect": "^5.0.0",

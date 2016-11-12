@@ -5,8 +5,11 @@ angular.module('languageLab.controllers', ['ngRoute', 'ui.router', 'pascalprecht
 })
 
 .controller('HomePageCtrl', function($scope, $rootScope) {
-    
+
     // init js input from root scope
     $rootScope.fileInput();
+
+    // test
+    $rootScope.excelToJson();
 
 });

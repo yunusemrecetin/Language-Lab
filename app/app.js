@@ -25,6 +25,7 @@ languageLab.run(function($rootScope, $state) {
         i = str.lastIndexOf('/') + 1;
       }
       fileInputText.value = str.slice(i, str.length);
+      console.log("File URL : " + fileInput.value);
     }
 
     function changeState() {
@@ -44,7 +45,37 @@ languageLab.run(function($rootScope, $state) {
    * Excel to Json Parse
    */
   $rootScope.excelToJson = function(){
-    
+    var url = "http://localhost:8080/assets/demo_sheets.xlsx";
+    var oReq = new XMLHttpRequest();
+    oReq.open("GET", url, true);
+    oReq.responseType = "arraybuffer";
+
+    oReq.onload = function(e) {
+      var arraybuffer = oReq.response;
+
+      /* convert data to binary string */
+      var data = new Uint8Array(arraybuffer);
+      var arr = new Array();
+      for(var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
+      var bstr = arr.join("");
+
+      /* Call XLSX */
+      var workbook = XLSX.read(bstr, {type:"binary"});
+
+      // Xlsx to Json
+      var result = {};
+      workbook.SheetNames.forEach(function(sheetName) {
+        var roa = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+        if(roa.length > 0){
+          result[sheetName] = roa;
+        }
+      });
+
+      console.log(JSON.stringify(result, 2, 2));
+      /* DO SOMETHING WITH workbook HERE */
+    }
+
+    oReq.send();
   }
 
 });
