@@ -1,29 +1,15 @@
-var languageLab = angular.module('languageLab', ['ngRoute', 'ui.router', 'pascalprecht.translate']);
+var languageLab = angular.module('languageLab', ['languageLab.controllers']);
 
 languageLab.constant('Config', {
     'APP_NAME' : 'Language Lab'
 });
 
-languageLab.config(function($urlRouterProvider, $routeProvider) {
+languageLab.run(function($rootScope, $state) {
 
-    $routeProvider
-    .when("/home", {
-        templateUrl : "page-list/home-page.html",
-        controller : "HomePageCtrl"
-    });
-
-    $urlRouterProvider.otherwise('/home');
-
-});
-
-languageLab.controller('GlobalController', function($scope, Config) {
-    $scope.config = Config;
-});
-
-languageLab.controller('HomePageCtrl', function($scope) {
-    console.log("You are home controller");
-
-    // Choose File // 
+  /**
+   * UI Input
+   */
+  $rootScope.fileInput = function() {
     var fileInputTextDiv = document.getElementById('file_input_text_div');
     var fileInput = document.getElementById('file_input_file');
     var fileInputText = document.getElementById('file_input_text');
@@ -52,10 +38,28 @@ languageLab.controller('HomePageCtrl', function($scope) {
         }
       }
     }
+  }
 
-// Choose File //
+  /**
+   * Excel to Json Parse
+   */
+  $rootScope.excelToJson = function(){
+    
+  }
+
 });
 
+languageLab.config(function($urlRouterProvider, $routeProvider) {
+
+    $routeProvider
+    .when("/home", {
+        templateUrl : "page-list/home-page.html",
+        controller : "HomePageCtrl"
+    });
+
+    $urlRouterProvider.otherwise('/home');
+
+});
 
 
 
