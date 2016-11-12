@@ -24,7 +24,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['./app/*.html', './app/page-list/*.html', './app/css/*.css', './app/*.js'], ['html']);
+  gulp.watch(['./app/*.html', './app/page-list/*.html', './app/css/*.css', './app/*.css', './app/js/*.js', './app/*.js'], ['html']);
 });
 
 gulp.task('connect', ['serve', 'watch']);
