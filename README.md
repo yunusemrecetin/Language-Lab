@@ -35,10 +35,12 @@ Dillinger is currently extended with the following plugins
 * Gulp
 * Gulp Connect
 * Gulp Open
-* JS Xlsx [New]
+* JS Xlsx
+* JSZip [New]
 
 Plugin docs;
 
  - [Angular JS Translate Docs](https://github.com/angular-translate/angular-translate/blob/master/README.md)
  - [Material Design Lite Docs](https://github.com/google/material-design-lite/blob/mdl-1.x/README.md)
  - [JS Xlsx Docs](https://github.com/SheetJS/js-xlsx/blob/master/README.md)
+ - [JSZip Docs](https://github.com/Stuk/jszip/blob/master/README.markdown)
