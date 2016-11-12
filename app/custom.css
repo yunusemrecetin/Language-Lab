@@ -1,35 +1,10 @@
 body {
-      font-family: 'Proza Libre', sans-serif;
-      letter-spacing: 0.2em;
-      /* Location of the image */
-      background-image: url("img/background-photo.jpg");
-      /* Image is centered vertically and horizontally at all times */
-      background-position: center center;
-      
-      /* Image doesn't repeat */
-      background-repeat: no-repeat;
-      
-      /* Makes the image fixed in the viewport so that it doesn't move when 
-        the content height is greater than the image height */
-      background-attachment: fixed;
-      
-      /* This is what makes the background image rescale based on its container's size */
-      background-size: cover;
-      
-      /* Pick a solid background color that will be displayed while the background image is loading */
-      background-color:#464646;
-      
-      /* SHORTHAND CSS NOTATION
-      * background: url(background-photo.jpg) center center cover no-repeat fixed;
-      */
-      /* For mobile devices */
-  @media only screen and (max-width: 767px) {
-    body {
-      /* The file size of this background image is 93% smaller
-      * to improve page load speed on mobile internet connections */
-      background-image: url(images/background-photo-mobile-devices.jpg);
-    }
-	}  
+  background-image: url("img/background-photo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646; 
 }
 
 .file_input_div {
@@ -63,7 +38,7 @@ body {
     margin-top: 70px;
     display: inline-block;
     zoom: 1;
-    display*: inline;
+    display: inline;
 }
 
 .content-language {
@@ -80,10 +55,6 @@ body {
   background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
   background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-}
-
-.mdl-cell--4-col{
-  /*background: yellow;*/
 }
 
 
@@ -124,6 +95,33 @@ body {
 }
 
 /* # Languages -Source File- */
+
+.langauge-lab-content{
+  max-width: 980px;
+}
+
+.right-input-title{
+  padding-top: 15px;
+}
+
+.input-bottom-to{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.test-color{
+  background-color: red;
+}
+
+/**
+* @media
+*/
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(images/background-photo-mobile-devices.jpg);
+  }
+}
 
 
 

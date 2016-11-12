@@ -19,6 +19,7 @@
     "material-design-lite": "material-design-lite#1.2.1",
     "angular-route": "^1.5.8",
     "angular-ui-router": "^0.3.1",
-    "angular-translate": "^2.12.1"
+    "angular-translate": "^2.12.1",
+    "js-xlsx": "^0.8.0"
   }
 }
