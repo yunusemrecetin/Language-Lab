@@ -2,7 +2,9 @@ languageLab.config(['$translateProvider', function ($translateProvider) {
   $translateProvider.translations('en', {
     'TAB_1': 'Source File',
     'TAB_2': 'Text to Source',
-    'MENU' : 'MENU'
+    'MENU' : 'MENU',
+    'PLEASE_SELECT_FILE' : 'Plase Select File',
+    'SOURCE_FILE' : 'Source File'
   });
  
   $translateProvider.translations('de', {
