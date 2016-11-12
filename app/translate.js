@@ -18,6 +18,7 @@ languageLab.config(['$translateProvider', function ($translateProvider) {
   });
 
   $translateProvider.preferredLanguage('en');
+  $translateProvider.useSanitizeValueStrategy('escape');
 
 }]);
 
