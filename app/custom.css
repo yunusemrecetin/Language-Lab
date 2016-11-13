@@ -1,31 +1,35 @@
 body {
-  background-image: url("img/background-photo.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-color:#464646; 
+  background-size: cover; 
+  font-family: 'Raleway', sans-serif;
 }
+
+
+/*.mdl-card {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}*/
 
 .file_input_div {
   margin: auto;
   width: 250px;
   height: 40px;
   position: absolute;
-  left: 25%;
-  top: 50%; 
-  margin-top: -150px !important;
-  margin-right: -150px !important;
 }
 
 .file_input {
   float: left;
+  margin-top: 250px;
+
 }
 
 #file_input_text_div {
   width: 200px;
-  margin-top: -8px;
-  margin-left: 5px;
+  position: absolute;
+  top: 37%;
+  left: 40%;
+  
 }
 
 .none {
@@ -38,10 +42,10 @@ body {
     margin-top: 70px;
     display: inline-block;
     zoom: 1;
-    display: inline;
+    
 }
 
-.content-language {
+/*.content-language {
   height: 500px;
   width: 1024px;
   position: absolute;
@@ -55,49 +59,21 @@ body {
   background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
   background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 48%, rgba(245,245,245,1) 51%, rgba(237,237,237,1) 93%, rgba(237,237,237,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-}
+}*/
 
 
-.TranslateTo {
-  font-weight: 700;
-  font-size: 17px;
-  position: absolute;
-  left: 3%;
-  top: 50%;
-  margin-top: 100px;
-}
-
-/* Languages -Source File- */
-#languages {
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  
-
-}
-.checkboxes {
-  margin-top: 20px;
-}
-
-.left {
-  float: left;
-  position: absolute;
-  left: 25%;
-  top: 50%; 
-}
-.right{
-  float: right;
-  margin-right: 20px;
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  margin-left: 175px; 
-}
-
-/* # Languages -Source File- */
-
-.langauge-lab-content{
+.language-lab-content{
   max-width: 980px;
+  height: 700px;
+
+}
+
+.mdl-shadow--8dp {
+  transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.mdl-shadow--8dp:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .right-input-title{
@@ -108,20 +84,54 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.test-color{
-  background-color: red;
-}
-
-/**
-* @media
-*/
-@media only screen and (max-width: 767px) {
-  body {
-    background-image: url(images/background-photo-mobile-devices.jpg);
-  }
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 25px;
+  
 }
 
 
+.upload-svg {
+  position: absolute;
+  left: 40%;
+  right: 25%;
+}
+
+.upload-text {
+  position: absolute;
+  left: 42%;
+  right: 25%;
+  top: 20%;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.mdl-radio__label {
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+
+.mdl-button--raised, .mdl-button--raised:hover {
+  border-radius: 30px;
+  width: 160px;
+  height: 50px;
+  background: #3D597C;
+  color: #fff;
+  position: absolute;
+  left: 40%;
+  bottom: 3%;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+
+.mdl-card {
+  background: #ecf0f1;
+}
+
+ 
 
