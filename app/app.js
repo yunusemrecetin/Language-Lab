@@ -72,10 +72,39 @@ languageLab.run(function($rootScope, $state) {
       });
 
       console.log(JSON.stringify(result, 2, 2));
+      jsonToAndroid(JSON.stringify(result, 2, 2));
       /* DO SOMETHING WITH workbook HERE */
     }
 
     oReq.send();
+
+    function jsonToAndroid(jsonText){
+      var parseJson = JSON.parse(jsonText)['Sheet1'];
+      var stringXml = "";
+
+      /**
+       * Key
+       */
+/*      for(var count in parseJson){
+        var i = 0;
+        for(var ar_key in parseJson[0]){
+          console.log("Language : " + Object.keys(parseJson[count])[i]);
+          console.log("Key : " + parseJson[count].key);
+          console.log("Value : " + parseJson[count][ar_key]);
+          console.log("--------------------------------");
+          i++;
+        }
+      }*/
+
+/*      for(var keyCount = 0; keyCount < Object.keys(parseJson[0]).length; keyCount++){
+        console.log("Key : " + parseJson[keyCount].key);
+        console.log("Values : " + parseJson[keyCount][0]);
+      }
+*/
+
+
+    }
+
   }
 
 });

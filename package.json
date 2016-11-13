@@ -19,6 +19,7 @@
   "dependencies": {
     "bower": "^1.7.9",
     "gulp": "^3.9.1",
+    "local-db": "^1.0.0",
     "xlsx": "^0.8.0"
   },
   "devDependencies": {
